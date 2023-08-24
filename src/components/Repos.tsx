@@ -16,7 +16,7 @@ const Repos: FC<ReposProps> = () => {
     try {
       const response = await fetch(
         "https://api.github.com/graphql",
-        requestOptions
+        requestOptions,
       );
       const data = await response.json();
       setRepos(data["data"]["viewer"]["repositories"]["nodes"]);

@@ -1,8 +1,7 @@
 {
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}",
-        ".vscode{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/8d1a8d77-ddd7-4a4e-86ea-0cabd99881db/resourceGroups/amcmilneportfolio_group/providers/Microsoft.Web/sites/amcmilneportfolio",
-    "appService.deploySubpath": "."
+  "editor.formatOnSave": true,
+  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"],
+  "appService.defaultWebAppToDeploy": "/subscriptions/8d1a8d77-ddd7-4a4e-86ea-0cabd99881db/resourceGroups/amcmilneportfolio_group/providers/Microsoft.Web/sites/amcmilneportfolio",
+  "appService.deploySubpath": "."
 }
+

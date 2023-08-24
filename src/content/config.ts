@@ -164,21 +164,20 @@ const config = {
 
 export default config;
 
-
 // additional, less current stack
- // {
-      //   img: process.env.PUBLIC_URL + "/assets/mongo.png",
-      //   alt: "mongodb",
-      // },
-      // {
-      //   img: process.env.PUBLIC_URL + "/assets/mysql.png",
-      //   alt: "mysql",
-      // },
-         // {
-      //   img: process.env.PUBLIC_URL + "/assets/mongoose.png",
-      //   alt: "mongoose",
-      // },
-      // {
-      //   img: process.env.PUBLIC_URL + "/assets/sequelize.png",
-      //   alt: "sequelize",
-      // },
+// {
+//   img: process.env.PUBLIC_URL + "/assets/mongo.png",
+//   alt: "mongodb",
+// },
+// {
+//   img: process.env.PUBLIC_URL + "/assets/mysql.png",
+//   alt: "mysql",
+// },
+// {
+//   img: process.env.PUBLIC_URL + "/assets/mongoose.png",
+//   alt: "mongoose",
+// },
+// {
+//   img: process.env.PUBLIC_URL + "/assets/sequelize.png",
+//   alt: "sequelize",
+// },

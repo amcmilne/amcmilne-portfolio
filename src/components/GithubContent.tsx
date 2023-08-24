@@ -1,27 +1,27 @@
 type LanguageNode = {
-  name: string;
-};
+  name: string
+}
 
 export type RepoNode = {
-  projectsUrl: string;
-  id: string;
-  name: string;
-  description: string;
+  projectsUrl: string
+  id: string
+  name: string
+  description: string
   languages: {
-    nodes: LanguageNode[];
-  };
-  openGraphImageUrl: string;
-};
+    nodes: LanguageNode[]
+  }
+  openGraphImageUrl: string
+}
 
 type GitHubContentProps = {
-  repos: RepoNode[];
-};
+  repos: RepoNode[]
+}
 
 const GitHubContent = ({ repos }: GitHubContentProps) => {
   return (
     <div
       className={`min-h-screen flex items-center justify-center flex-col`}
-      style={{ background: "#5F9EA0" }}
+      style={{ background: '#5F9EA0' }}
       id="myrepos"
     >
       <h1
@@ -39,11 +39,11 @@ const GitHubContent = ({ repos }: GitHubContentProps) => {
               description,
               languages,
               openGraphImageUrl,
-            } = repo;
-            const displayDescription = description ? description : "";
-            const hideRepo = name === "osu-final-project";
-              return (
-                !hideRepo &&
+            } = repo
+            const displayDescription = description ? description : ''
+            const hideRepo = name === 'osu-final-project'
+            return (
+              !hideRepo && (
                 <div key={id} className={`w-full`}>
                   <div
                     className={`c-card block bg-gray-100 shadow-md hover:shadow-xl rounded-lg overflow-hidden mb-2`}
@@ -95,12 +95,13 @@ const GitHubContent = ({ repos }: GitHubContentProps) => {
                     </div>
                   </div>
                 </div>
-              );
+              )
+            )
           })}
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default GitHubContent;
+export default GitHubContent

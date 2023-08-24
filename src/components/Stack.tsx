@@ -35,5 +35,5 @@ const Stack: FC = () => {
       </div>
     </div>
   );
-}
+};
 export default Stack;
