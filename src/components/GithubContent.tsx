@@ -18,7 +18,6 @@ type GitHubContentProps = {
 };
 
 const GitHubContent = ({ repos }: GitHubContentProps) => {
-
   return (
     <div
       className={`min-h-screen flex items-center justify-center flex-col`}
@@ -41,55 +40,62 @@ const GitHubContent = ({ repos }: GitHubContentProps) => {
               languages,
               openGraphImageUrl,
             } = repo;
-            return (
-              <div key={id} className={`w-full`}>
-                <div
-                  className={`c-card block bg-gray-100 shadow-md hover:shadow-xl rounded-lg overflow-hidden mb-2`}
-                >
-                  <div className={`relative pb-48`}>
-                    <img
-                      className={`absolute inset-0 h-full w-full object-cover`}
-                      src={openGraphImageUrl}
-                      alt="repoImage"
-                    />
-                  </div>
-                  <div className={`p-4 text-center`}>
-                    <button
-                      className={`bg-blue-steele font-body px-5 py-1 text-sm md:text-4x1 uppercase text-white rounded-lg mt-2 hover:bg-gray-500 `}
-                    >
-                      <a
-                        href={projectsUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+            const displayDescription = description ? description : "";
+            const hideRepo = name === "osu-final-project";
+              return (
+                !hideRepo &&
+                <div key={id} className={`w-full`}>
+                  <div
+                    className={`c-card block bg-gray-100 shadow-md hover:shadow-xl rounded-lg overflow-hidden mb-2`}
+                  >
+                    <div className={`relative pb-48`}>
+                      {openGraphImageUrl && (
+                        <img
+                          className={`absolute inset-0 h-full w-full object-cover`}
+                          src={openGraphImageUrl}
+                          alt="repoImage"
+                        />
+                      )}
+                    </div>
+                    <div className={`p-4 text-center`}>
+                      <button
+                        className={`bg-blue-steele font-body px-5 py-1 text-sm md:text-4x1 uppercase text-white rounded-lg mt-2 hover:bg-gray-500 `}
                       >
-                        {name}
-                      </a>
-                    </button>
-                    <p
-                      className={`text-blue-steele text-sm md:text-4x1 font-body pt-5`}
-                    >
-                      {languages.nodes.map((language) => (
-                        <li
-                          key={language.name}
-                          className={`inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2`}
+                        <a
+                          href={projectsUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
-                          {language.name}
-                        </li>
-                      ))}
-                    </p>
-                  </div>
-                  <div>
-                    <hr></hr>
-                    <details
-                      className={`text-blue-steele text-sm md:text-4x1 font-body pt-5 ml-4 mr-4 mb-4`}
-                    >
-                      <summary>More...</summary>
-                      <p>{description}</p>
-                    </details>
+                          {name}
+                        </a>
+                      </button>
+                      <p
+                        className={`text-blue-steele text-sm md:text-4x1 font-body pt-5`}
+                      >
+                        {languages.nodes.map((language) => (
+                          <li
+                            key={language.name}
+                            className={`inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2`}
+                          >
+                            {language.name}
+                          </li>
+                        ))}
+                      </p>
+                    </div>
+                    <div>
+                      <hr></hr>
+                      {description && (
+                        <details
+                          className={`text-blue-steele text-sm md:text-4x1 font-body pt-5 ml-4 mr-4 mb-4`}
+                        >
+                          <summary>More...</summary>
+                          <p>{displayDescription}</p>
+                        </details>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
+              );
           })}
         </div>
       </div>

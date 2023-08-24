@@ -6,7 +6,7 @@ myHeaders.append("Content-Type", "application/json");
 
 const graphql = JSON.stringify({
   query: `{viewer 
-              {name repositories(last: 100, affiliations: OWNER,  isFork: false) 
+              {name repositories(last: 100, affiliations: OWNER, isFork: false privacy: PUBLIC, orderBy: {field: CREATED_AT, direction: DESC}) 
                 {
                 nodes {
                     id name openGraphImageUrl description openGraphImageUrl descriptionHTML description projectsUrl 
