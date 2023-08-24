@@ -1,12 +1,12 @@
-import { FC } from "react";
-import { Link as ScrollLink } from "react-scroll";
-import content from "../content/config";
+import { FC } from 'react'
+import { Link as ScrollLink } from 'react-scroll'
+import content from '../content/config'
 
 const NavBar: FC = () => {
   return (
     <div
       style={{
-        background: "#F5FFFA",
+        background: '#F5FFFA',
       }}
       className={`font-display fixed top-0 w-screen z-40`}
     >
@@ -35,12 +35,12 @@ const NavBar: FC = () => {
                   {link.text2}
                 </span>
               </ScrollLink>
-            );
+            )
           })}
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

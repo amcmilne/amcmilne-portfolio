@@ -1,35 +1,35 @@
-import { useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState } from 'react'
 
 type UseWindowPositionProps = {
-  id: string;
-  height: number;
-  elements?: number;
-};
+  id: string
+  height: number
+  elements?: number
+}
 
 const useWindowPosition = ({
   id,
   height,
   elements = 1,
 }: UseWindowPositionProps) => {
-  const [animation, setAnimation] = useState<boolean>(false);
+  const [animation, setAnimation] = useState<boolean>(false)
 
   useLayoutEffect(() => {
     function updatePosition() {
       try {
-        const element = window.document.getElementById(id) as HTMLElement;
-        const offsetSetHeight = element.offsetHeight;
+        const element = window.document.getElementById(id) as HTMLElement
+        const offsetSetHeight = element.offsetHeight
         if (window.scrollY > offsetSetHeight * elements * height) {
-          setAnimation(true);
+          setAnimation(true)
         }
       } catch (err) {
-        setAnimation(false);
+        setAnimation(false)
       }
     }
-    window.addEventListener("scroll", updatePosition);
-    updatePosition();
-    return () => window.removeEventListener("scroll", updatePosition);
-  }, [id, height, elements]);
-  return animation;
-};
+    window.addEventListener('scroll', updatePosition)
+    updatePosition()
+    return () => window.removeEventListener('scroll', updatePosition)
+  }, [id, height, elements])
+  return animation
+}
 
-export default useWindowPosition;
+export default useWindowPosition

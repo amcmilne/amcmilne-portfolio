@@ -1,11 +1,11 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const SocialBar = () => {
   return (
     <div
       style={{
-        background: "#F5FFFA",
+        background: '#F5FFFA',
       }}
       id="mysocial"
     >
@@ -48,7 +48,7 @@ const SocialBar = () => {
         Copyright 2021
       </h2>
     </div>
-  );
-};
+  )
+}
 
-export default SocialBar;
+export default SocialBar

@@ -1,14 +1,14 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
-import content from "../content/config";
-import { FC } from "react";
+import content from '../content/config'
+import { FC } from 'react'
 
 const Stack: FC = () => {
   return (
     <div
       className={`flex items-center justify-center flex-col`}
-      style={{ background: "#eee" }}
+      style={{ background: '#eee' }}
       id="stack"
     >
       <h1
@@ -25,7 +25,7 @@ const Stack: FC = () => {
             <span
               key={index}
               className={` h-40 w-40 bg-white shadow-xl ml-1 mr-1 rounded-xl flex justify-center items-center p-5 m-2 ${
-                index % 0 !== 0 ? "animate-bounce" : "animate-bounceFirst"
+                index % 0 !== 0 ? 'animate-bounce' : 'animate-bounceFirst'
               } `}
             >
               <LazyLoadImage effect="blur" src={tech.img} alt={tech.alt} />
@@ -34,6 +34,6 @@ const Stack: FC = () => {
         </div>
       </div>
     </div>
-  );
-};
-export default Stack;
+  )
+}
+export default Stack

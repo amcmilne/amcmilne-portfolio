@@ -1,8 +1,8 @@
-const REACT_APP_GITHUB_API_KEY = process.env.REACT_APP_GITHUB_API_KEY || "";
+const REACT_APP_GITHUB_API_KEY = process.env.REACT_APP_GITHUB_API_KEY || ''
 
-const myHeaders = new Headers();
-myHeaders.append("Authorization", REACT_APP_GITHUB_API_KEY);
-myHeaders.append("Content-Type", "application/json");
+const myHeaders = new Headers()
+myHeaders.append('Authorization', REACT_APP_GITHUB_API_KEY)
+myHeaders.append('Content-Type', 'application/json')
 
 const graphql = JSON.stringify({
   query: `{viewer 
@@ -18,10 +18,10 @@ const graphql = JSON.stringify({
                 }
               }}`,
   variables: {},
-});
+})
 export const requestOptions: RequestInit = {
-  method: "POST",
+  method: 'POST',
   headers: myHeaders,
   body: graphql,
-  redirect: "follow",
-};
+  redirect: 'follow',
+}

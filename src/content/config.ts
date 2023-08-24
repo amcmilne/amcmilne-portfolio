@@ -1,30 +1,30 @@
 const config = {
   nav: {
-    logo: "M",
+    logo: 'M',
     links: [
-      { text1: "Projects", to: "myrepos" },
-      { text2: "Contact", to: "mysocial" },
+      { text1: 'Projects', to: 'myrepos' },
+      { text2: 'Contact', to: 'mysocial' },
     ],
   },
   header: {
-    img: process.env.PUBLIC_URL + "/assets/headshot.webp",
-    alt: "headshot",
-    text: ["Welcome,", "I'm Ann.", "I am a "],
+    img: process.env.PUBLIC_URL + '/assets/headshot.webp',
+    alt: 'headshot',
+    text: ['Welcome,', "I'm Ann.", 'I am a '],
     typical: [
-      "full stack web developer.",
+      'full stack web developer.',
       2000,
-      "creator.",
+      'creator.',
       2000,
-      "self-starter.",
+      'self-starter.',
       2000,
-      "woman in technology.",
+      'woman in technology.',
       2000,
-      "problem solver.",
+      'problem solver.',
       2000,
-      "critical thinker.",
+      'critical thinker.',
       2000,
     ],
-    btnText: "Learn More About Me...",
+    btnText: 'Learn More About Me...',
   },
   // myrepos: {
   //   title: "Projects",
@@ -103,66 +103,66 @@ const config = {
   // ],
   // },
   stack: {
-    title: "Stack",
+    title: 'Stack',
     tech: [
       {
-        img: process.env.PUBLIC_URL + "/assets/agile.png",
-        alt: "agile",
+        img: process.env.PUBLIC_URL + '/assets/agile.png',
+        alt: 'agile',
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/graphql.png",
-        alt: "graphql",
+        img: process.env.PUBLIC_URL + '/assets/graphql.png',
+        alt: 'graphql',
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/html.jpg",
-        alt: "html",
+        img: process.env.PUBLIC_URL + '/assets/html.jpg',
+        alt: 'html',
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/jira.png",
-        alt: "jira",
+        img: process.env.PUBLIC_URL + '/assets/jira.png',
+        alt: 'jira',
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/SASS.png",
-        alt: "sass",
+        img: process.env.PUBLIC_URL + '/assets/SASS.png',
+        alt: 'sass',
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/storybook.png",
-        alt: "storybook",
+        img: process.env.PUBLIC_URL + '/assets/storybook.png',
+        alt: 'storybook',
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/images.jpg",
-        alt: "images",
+        img: process.env.PUBLIC_URL + '/assets/images.jpg',
+        alt: 'images',
       },
       {
-        img: process.env.PUBLIC_URL + "/logo512.png",
-        alt: "react",
+        img: process.env.PUBLIC_URL + '/logo512.png',
+        alt: 'react',
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/express.png",
-        alt: "express",
+        img: process.env.PUBLIC_URL + '/assets/express.png',
+        alt: 'express',
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/node.png",
-        alt: "node",
+        img: process.env.PUBLIC_URL + '/assets/node.png',
+        alt: 'node',
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/github.png",
-        alt: "github",
+        img: process.env.PUBLIC_URL + '/assets/github.png',
+        alt: 'github',
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/heroku.png",
-        alt: "heroku",
+        img: process.env.PUBLIC_URL + '/assets/heroku.png',
+        alt: 'heroku',
       },
       {
-        img: process.env.PUBLIC_URL + "/assets/tailwind.png",
-        alt: "tailwind",
+        img: process.env.PUBLIC_URL + '/assets/tailwind.png',
+        alt: 'tailwind',
       },
     ],
     desc: `I have experience using many of the lastest technologies in the industry`,
   },
-};
+}
 
-export default config;
+export default config
 
 // additional, less current stack
 // {

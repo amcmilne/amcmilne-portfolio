@@ -5,7 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
 ### `npx prettier --write .`
+
 This manually runs prettier.
 
 ### `npm start`
