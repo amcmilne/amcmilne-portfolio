@@ -10,22 +10,17 @@ const config = {
     img: process.env.PUBLIC_URL + '/assets/headshot.webp',
     alt: 'headshot',
     text: ['Welcome,', "I'm Ann.", 'I am a '],
-    typical: [
-      'full stack web developer.',
-      2000,
-      'creator.',
-      2000,
-      'self-starter.',
-      2000,
-      'woman in technology.',
-      2000,
-      'problem solver.',
-      2000,
-      'critical thinker.',
-      2000,
-    ],
     btnText: 'Learn More About Me...',
   },
+
+  words: [
+    'full stack web developer.',
+    'creator.',
+    'self-starter.',
+    'woman in technology.',
+    'problem solver.',
+    'critical thinker.',
+  ],
   // myrepos: {
   //   title: "Projects",
   // repositories: [

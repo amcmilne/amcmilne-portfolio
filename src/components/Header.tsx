@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import Typical from 'react-typical'
+import { Typewriter } from 'react-simple-typewriter'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 import content from '../content/config'
@@ -45,12 +45,14 @@ const Header: FC = () => {
             } ${transition(3000)}`}
           >
             {content.header.text[2]}
-            <Typical
-              steps={content.header.typical}
-              loop={Infinity}
-              className={`inline-block`}
-              wrapper="p"
-            />
+            <Typewriter
+              cursor
+              delaySpeed={1000}
+              deleteSpeed={25}
+              loop
+              typeSpeed={75}
+              words={content.words}
+            ></Typewriter>
           </h1>
 
           <ScrollLink to="myrepos" smooth={true}>
