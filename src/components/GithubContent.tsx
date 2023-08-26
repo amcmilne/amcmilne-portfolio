@@ -32,14 +32,7 @@ const GitHubContent = ({ repos }: GitHubContentProps) => {
       <div className={`container mx-auto`}>
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
           {repos.map((repo) => {
-            const {
-              projectsUrl,
-              id,
-              name,
-              description,
-              languages,
-              openGraphImageUrl,
-            } = repo
+            const { id, name, description, languages, openGraphImageUrl } = repo
             const displayDescription = description ? description : ''
             const hideRepo = name === 'osu-final-project'
             return (
@@ -62,7 +55,7 @@ const GitHubContent = ({ repos }: GitHubContentProps) => {
                         className={`bg-blue-steele font-body px-5 py-1 text-sm md:text-4x1 uppercase text-white rounded-lg mt-2 hover:bg-gray-500 `}
                       >
                         <a
-                          href={projectsUrl}
+                          href={`https://github.com/amcmilne/${name}`}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
