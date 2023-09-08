@@ -24,7 +24,7 @@ const Header: FC = () => {
           <LazyLoadImage
             src={content.header.img}
             alt="profile"
-            className={`w-full mx-auto rounded-full`}
+            className={`w-full mx-auto rounded-full max-lg:mt-20`}
             effect="blur"
             placeholderSrc={content.header.alt}
           />
@@ -57,7 +57,7 @@ const Header: FC = () => {
 
           <ScrollLink to="myrepos" smooth={true}>
             <button
-              className={` animate-pulse bg-blue-steele px-10 py-3 text-md uppercase text-white rounded-lg mt-10 hover:bg-indigo-400 transform  ${
+              className={` animate-pulse bg-blue-steele px-10 py-3 text-md uppercase text-white rounded-lg mt-10 mb-10 hover:bg-indigo-400 transform  ${
                 animated ? 'translate-y-0' : styleTranslate
               } ${transition(3500)}`}
             >
